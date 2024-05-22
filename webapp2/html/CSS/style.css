@@ -1,6 +1,7 @@
+
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: 'Alata', sans-serif;;
 }
 .Main-logo{
   position: absolute;
@@ -8,6 +9,32 @@ body {
   width: 150px;
   height: 150px;
 }
+.travel-image {
+  height: 250px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.travelimg-box{
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+ 
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color:black;
+  background: rgb(228, 226, 226);
+  background: rgba(226, 213, 213, 0.5);
+  margin-top: 65px;
+  border-radius: 36px;
+}
+ 
 .navbar {
   background-color: #00AADD;
   padding: 10px 0;
@@ -17,7 +44,7 @@ body {
   padding-left: 100px;
   border-radius: 15px 0px  0px;
 }
-
+ 
 .navbar a {
   color: white;
   padding: 12px 16px;
@@ -25,18 +52,18 @@ body {
   display: inline-block;
 margin-left: 50px;
 }
-
+ 
 /* Logo stijlen */
 .logo {
   font-size: 24px;
   font-weight: bold;
 }
-
+ 
 /* Zoekbalk stijlen */
 .search-box {
   float: right;
 }
-
+ 
 /* Input veld binnen zoekbalk */
 .search-box input[type="text"] {
   padding: 8px;
@@ -44,9 +71,9 @@ margin-left: 50px;
   border-radius: 15px;
   top: 1px;
   color: white;
-
+ 
 }
-
+ 
 /* Zoekknop binnen zoekbalk */
 .search-box button {
   padding: 8px;
@@ -63,16 +90,292 @@ margin-left: 50px;
   height: 25px;
   border-radius: 10px;
 }
-header, .reasons, footer {
-  margin: 20px;
-  padding: 10px;
-  background-color: #f0f0f0;
-}
-
+ 
+ 
 header h1, .reasons h2, footer h2 {
   color: #003399; /* Donkerblauw */
+  position: absolute;
 }
-
-p {
-  color: #333; /* Donkergrijs */
+p{
+  font-size: 22px;
 }
+.card {
+  width: 350px;
+  margin-top: 70px;
+  height: 170px;
+  position: relative;
+  padding: 25px;
+  margin-left: 60px;
+  background: radial-gradient(178.94% 106.41% at 26.42% 106.41%, #FFF7B1 0%, rgba(255, 255, 255, 0) 71.88%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */, #FFFFFF;
+  box-shadow: 0px 155px 62px rgba(0, 0, 0, 0.01), 0px 87px 52px rgba(0, 0, 0, 0.05), 0px 39px 39px rgba(0, 0, 0, 0.09), 0px 10px 21px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 23px;
+  transition: all 0.8s cubic-bezier(0.15, 0.83, 0.66, 1);
+  cursor: pointer;
+}
+ 
+.card:hover {
+  transform: scale(1.05);
+}
+ 
+.container {
+  width: 250px;
+  height: 250px;
+  position: absolute;
+  right: -35px;
+  top: -50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: scale(0.7);
+}
+ 
+.cloud {
+  width: 250px;
+}
+ 
+.front {
+  padding-top: 45px;
+  margin-left: 25px;
+  display: inline;
+  position: absolute;
+  z-index: 11;
+  animation: clouds 8s infinite;
+  animation-timing-function: ease-in-out;
+}
+ 
+.back {
+  margin-top: -30px;
+  margin-left: 150px;
+  z-index: 12;
+  animation: clouds 12s infinite;
+  animation-timing-function: ease-in-out;
+}
+ 
+.right-front {
+  width: 45px;
+  height: 45px;
+  border-radius: 50% 50% 50% 0%;
+  background-color: #4c9beb;
+  display: inline-block;
+  margin-left: -25px;
+  z-index: 5;
+}
+ 
+.left-front {
+  width: 65px;
+  height: 65px;
+  border-radius: 50% 50% 0% 50%;
+  background-color: #4c9beb;
+  display: inline-block;
+  z-index: 5;
+}
+ 
+.right-back {
+  width: 50px;
+  height: 50px;
+  border-radius: 50% 50% 50% 0%;
+  background-color: #4c9beb;
+  display: inline-block;
+  margin-left: -20px;
+  z-index: 5;
+}
+ 
+.left-back {
+  width: 30px;
+  height: 30px;
+  border-radius: 50% 50% 0% 50%;
+  background-color: #4c9beb;
+  display: inline-block;
+  z-index: 5;
+}
+ 
+.sun {
+  width: 120px;
+  height: 120px;
+  background: -webkit-linear-gradient(to right, #fcbb04, #fffc00);
+  background: linear-gradient(to right, #fcbb04, #fffc00);
+  border-radius: 60px;
+  display: inline;
+  position: absolute;
+}
+ 
+.sunshine {
+  animation: sunshines 2s infinite;
+}
+ 
+@keyframes sunshines {
+  0% {
+    transform: scale(1);
+    opacity: 0.6;
+  }
+ 
+  100% {
+    transform: scale(1.4);
+    opacity: 0;
+  }
+}
+ 
+@keyframes clouds {
+  0% {
+    transform: translateX(15px);
+  }
+ 
+  50% {
+    transform: translateX(0px);
+  }
+ 
+  100% {
+    transform: translateX(15px);
+  }
+}
+ 
+.card-header {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+ 
+.card-header span:first-child {
+  word-break: break-all;
+  font-weight: 800;
+  font-size: 15px;
+  line-height: 135%;
+  color: rgba(87, 77, 51, 0.66);
+}
+ 
+.card-header span:last-child {
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 135%;
+  color: rgba(87, 77, 51, 0.33);
+}
+ 
+.temp {
+  position: absolute;
+  left: 25px;
+  bottom: 12px;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 77px;
+  color: rgba(87, 77, 51, 1);
+}
+ 
+.temp-scale {
+  width: 80px;
+  height: 36px;
+  position: absolute;
+  right: 25px;
+  bottom: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.06);
+  border-radius: 9px;
+}
+ 
+.temp-scale span {
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 134.49%;
+  color: rgba(87, 77, 51, 0.66);
+}
+.container-weather {
+  justify-content: center;
+  display: flex;
+  margin-top: 150px;
+}
+.animated-button {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 16px 36px;
+  border: 4px solid;
+  border-color: transparent;
+  font-size: 16px;
+  background-color: inherit;
+  border-radius: 100px;
+  font-weight: 600;
+  color: black;
+  box-shadow: 0 0 0 2px yellow;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+}
+ 
+.animated-button svg {
+  position: absolute;
+  width: 24px;
+  fill: yellow;
+  z-index: 9;
+  transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+ 
+.animated-button .arr-1 {
+  right: 16px;
+}
+ 
+.animated-button .arr-2 {
+  left: -25%;
+}
+ 
+.animated-button .circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 20px;
+  height: 20px;
+  background-color: yellow;
+  border-radius: 50%;
+  opacity: 0;
+  transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+ 
+.animated-button .text {
+  position: relative;
+  z-index: 1;
+  transform: translateX(-12px);
+  transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+ 
+.animated-button:hover {
+  box-shadow: 0 0 0 12px transparent;
+  color: #212121;
+  border-radius: 12px;
+}
+ 
+.animated-button:hover .arr-1 {
+  right: -25%;
+}
+ 
+.animated-button:hover .arr-2 {
+  left: 16px;
+}
+ 
+.animated-button:hover .text {
+  transform: translateX(12px);
+}
+ 
+.animated-button:hover svg {
+  fill: #212121;
+}
+ 
+.animated-button:active {
+  scale: 0.95;
+  box-shadow: 0 0 0 4px black;
+}
+ 
+.animated-button:hover .circle {
+  width: 220px;
+  height: 220px;
+  opacity: 1;
+}
+.button-container {
+  display: flex;
+  align-items: center;
+  gap: 300px;
+  margin-left: 140px;
+  margin-top: 30px;
+}
+ 
