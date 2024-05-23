@@ -34,6 +34,13 @@ body {
   margin-top: 65px;
   border-radius: 36px;
 }
+.home-pageinfo{
+background-color: lightblue;
+width: 500px;
+margin-left: 65px;
+margin-top: 40px;
+border-radius: 15px;
+}
  
 .navbar {
   background-color: #00AADD;
@@ -84,17 +91,23 @@ margin-left: 50px;
   border-radius: 20px;
 }
 .over-ons-button{
-  background-color: lightblue;
-  border: none;
-  width: 75px;
-  height: 25px;
-  border-radius: 10px;
+  top:50%;
+  background-color:#0a0a23;
+  color: #fff;
+  border:none; 
+  border-radius:10px; 
+  padding:15px;
+  min-height:30px; 
+  min-width: 120px;
+  margin-bottom: 10px;
 }
- 
+ .info-box{
+  margin-left: 20px;
+  padding-top: 40px;
+ }
  
 header h1, .reasons h2, footer h2 {
   color: #003399; /* Donkerblauw */
-  position: absolute;
 }
 p{
   font-size: 22px;
@@ -378,4 +391,72 @@ p{
   margin-left: 140px;
   margin-top: 30px;
 }
- 
+.card {
+  width: 350px;
+  margin-top: 70px;
+  height: auto; /* Veranderde van 170px naar auto om de hoogte dynamisch te maken */
+  position: relative;
+  padding: 25px;
+  margin-left: 60px;
+  background: radial-gradient(178.94% 106.41% at 26.42% 106.41%, #FFF7B1 0%, rgba(255, 255, 255, 0) 71.88%), #FFFFFF;
+  box-shadow: 0px 155px 62px rgba(0, 0, 0, 0.01), 0px 87px 52px rgba(0, 0, 0, 0.05), 0px 39px 39px rgba(0, 0, 0, 0.09), 0px 10px 21px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 23px;
+  transition: all 0.8s cubic-bezier(0.15, 0.83, 0.66, 1);
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: scale(1.02);
+  box-shadow: 0px 0px 1px 1px #5a5a5a;
+}
+
+.card__img {
+  width: 100%;
+  height: auto; /* Veranderde van 100% naar auto om de hoogte dynamisch te maken */
+  object-fit: cover;
+  border-radius: 20px 20px 0 0;
+  justify-content: center;
+}
+
+.card__descr-wrapper {
+  padding: 15px;
+  display: grid;
+  grid-template-columns: 1fr; /* Maakt de beschrijving een kolom */
+}
+
+.card__title {
+  color: var(--font-color);
+  text-align: center;
+  margin-bottom: 15px;
+  font-weight: 900;
+  font-size: 16px;
+}
+
+.card__descr {
+  color: var(--font-color);
+  text-align: justify; /* Voegt rechtstreeks tekst toe aan de beschrijving */
+}
+.svg {
+  width: 25px;
+  height: 25px;
+  transform: translateY(25%);
+  fill: var(--font-color);
+}
+
+.card__links {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-self: flex-end;
+}
+
+.card__links .link {
+  color: var(--font-color);
+  font-weight: 600;
+  font-size: 15px;
+  text-decoration: none;
+}
+
+.card__links .link:hover {
+  text-decoration: underline;
+}
