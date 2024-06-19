@@ -14,7 +14,7 @@
             $fetch = $query->fetch();
             if($row > 0) {
                 $_SESSION['user'] = $fetch['firstname'];
-                header("Location: index.html");
+                header("Location: index.php");
                 exit();
             } else {
                 echo "<script>alert('Invalid username or password')</script>";

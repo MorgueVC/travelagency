@@ -1,8 +1,8 @@
 <?php
-$host = 'travel_db';
+$host = 'localhost';
 $db   = 'travelweb';
 $user = 'root';
-$pass = 'rootpassword';
+$pass = '';
 
 $dsn = "mysql:host=$host;dbname=$db";
 

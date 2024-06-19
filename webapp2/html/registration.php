@@ -40,7 +40,7 @@
                 <div class="form-group">
                     <button class="btn btn-primary form-control" name="register">Register</button>
                 </div>
-                <a href="login.php">Login</a>
+                <a href="">Login</a>
             </form>
         </div>
     </div>
