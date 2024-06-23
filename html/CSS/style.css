@@ -1,0 +1,671 @@
+body {
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  font-family: 'Alata', sans-serif;
+}
+
+header {
+  background-color: #0073e6;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.navbar-admin {
+  background-color: #333;
+  overflow: hidden;
+}
+
+.navbar-admin a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+.navbar-admin a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.table-wrapper {
+  width: 95%;
+  margin: 20px auto;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.fl-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.fl-table th,.fl-table td {
+  text-align: left;
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+}
+
+.fl-table th {
+  background-color: #0073e6;
+  color: white;
+}
+
+.fl-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.fl-table tr:hover {
+  background-color: #f1f1f1;
+}
+
+.button-cover {
+  padding: 10px 20px;
+  background-color: #0073e6;
+  color: rgba(6, 91, 248, 0.22);
+  border: none;
+  cursor: pointer;
+}
+
+.button-cover:hover {
+  background-color: #0056b3;
+}
+
+.text {
+  font-weight: bold;
+}
+
+.h2-link {
+  color: #0073e6;
+  text-decoration: none;
+}
+
+.h2-link:hover {
+  text-decoration: underline;
+}
+/* index.php*/
+header {
+  background: rgba(47, 143, 246, 0.65);
+  color: #fff;
+  padding: 10px 20px;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 10px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+main {
+  padding: 20px;
+  text-align: center;
+}
+.deals-container {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  gap: 44px;
+  margin-top: 100px;
+
+}
+
+.deals-box {
+  background-image: url('/webapp2/img/dealsimg.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  width: 400px;
+  position: relative;
+  border-radius: 15px;
+}
+.deals1-box {
+  background-image: url('/webapp2/img/dealsimg1.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  width: 400px;
+  position: relative;
+  border-radius: 15px;
+
+}.deals2-box {
+   background-image: url('/webapp2/img/dealsimg2.jpg');
+   background-size: cover;
+   background-position: center;
+   height: 300px;
+   width: 400px;
+   position: relative;
+   border-radius: 15px;
+
+ }
+
+
+.box-content {
+  position: absolute;
+  top: 90%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.deals-button {
+  background-color: rgba(0, 115, 230, 0.63);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  text-decoration: none;
+}
+.deals-container{
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  gap: 44px;
+  margin-top: 100px;
+}
+.deals-box{
+  background-color: black;
+  height:300px;
+  width: 400px;
+}
+.weather-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.weather-card {
+  background-color: rgba(26, 138, 246, 0.23);
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px;
+  width: 200px;
+  text-align: center;
+}
+
+.weather-card h2 {
+  font-weight: bold;
+  margin-top: 0;
+}
+
+.weather-card img {
+  width: 50px;
+  height: 50px;
+  margin: 10px auto;
+}
+
+
+.weather-card p {
+  margin-bottom: 10px;
+}
+
+.weather-card p:last-child {
+  font-size: 18px;
+  font-weight: bold;
+}
+footer {
+  text-align: center;
+  padding: 10px 20px;
+  background-image: linear-gradient(to right, rgba(0, 42, 255, 0.4) 0%, rgba(0, 128, 255, 0.77) 100%);
+  color: #fff;
+}
+.privacy-voorwaarden{
+  text-decoration: none;
+  color: white;
+}
+.home-info{
+  max-width: 800px;
+  font-size: 18px;
+}
+.home-info-box{
+  display: flex;
+  justify-content: center;
+}
+/*overons css*/
+.history-section {
+  background-color: white;
+  padding: 20px;
+  margin-bottom: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+h1, h2 {
+  color: #000000;
+  margin-top: 0;
+  font-size: 29px;
+}
+
+p {
+  line-height: 1.6;
+  font-size: 18px;
+}
+.box-info{
+  background-image: linear-gradient(to right, rgba(0, 42, 255, 0.05) 0%, rgba(0, 128, 255, 0.44) 100%);
+  border-radius: 15px;
+  max-width: 750px;
+}
+.info-container{
+  display: flex;
+  justify-content: center;
+}
+
+.success-story {
+  background-image: linear-gradient(to right, rgba(0, 42, 255, 0.33) 0%, #2891f8 100%);
+  color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+@media (max-width: 768px) {
+  .history-section {
+    padding: 15px;
+    margin-bottom: 20px;
+  }
+}
+/*bookings.css*/
+.navar-text{
+  background-color: #00AADD;
+  width: 100%;
+  position: relative;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+
+}
+.search-box {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  justify-content: end;
+}
+
+.search-box button {
+  background-color: #026e8f;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  margin-right: 5px;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.search-box input[type="text"] {
+  padding: 6px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  width: 200px;
+  margin-right: 10px;
+}
+
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+  }
+
+  .navbar a {
+    padding: 8px 12px;
+  }
+
+  .search-box input[type="text"] {
+    width: 150px;
+  }
+}
+
+.parent-flex{
+  flex-wrap: wrap;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 100px;
+}
+table {
+  margin: 20px 0;
+}
+
+table, th, td {
+  border: 1px solid #ddd;
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+}
+
+.card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  overflow: hidden;
+  max-width: 400px;
+  width: 100%;
+}
+
+.card-content {
+  padding: 16px;
+}
+
+.card-image {
+}
+
+.card-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.price {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin: 0;
+}
+
+.description {
+  margin: 8px 0 0;
+}
+.Main-logo{
+  width: 150px;
+  height: 150px;
+}
+.book-button {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  color: white;
+  font-size: 1em;
+  transition: background-color 0.3s ease, border-color 0.5s ease;
+}
+.button-book{
+  background-color: #00AADD;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+
+}
+.book-button:hover {
+  background-color: #00e1ff;
+  border-color: #00e1ff;
+  border-radius: 10px;
+}
+
+.card {
+  position: relative;
+}
+
+
+.fixed-footer {
+  position: relative;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-image: linear-gradient(to right, rgba(0, 42, 255, 0.4) 0%, rgba(0, 128, 255, 0.83) 100%);
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  height: 60px;
+}
+
+.footer-content {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.footer-links {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.footer-links li a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-links li a:hover {
+  color: #ddd;
+}
+.Destination{
+  margin-left: 15px;
+  font-size: 20px;
+}
+.navar-text{
+  width: 100%;
+  position: relative;
+  border-radius: 10px;
+  display: flex;
+  background-image: linear-gradient(to right, rgba(0, 42, 255, 0.4) 0%, rgba(0, 128, 255, 0.77) 100%);
+
+}
+.navbar {
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+  top: 0;
+  z-index: 100;
+  margin-bottom: 50px;
+  gap: 50px;
+}
+.navbar a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 16px;
+  font-size: 1em;
+  transition: background-color 0.3s ease;
+  border-radius: 10px;
+}
+.navbar a:hover {
+  background-image: linear-gradient(to right, rgba(0, 42, 255, 0.4) 0%, rgba(0, 128, 255, 0.77) 100%);
+}
+.search-button{
+  background-color: #00AADD;
+  border-radius: 10px;
+}
+.search-box {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  justify-content: end;
+}
+.search-box button {
+  background-color: #026e8f;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  margin-right: 5px;
+  border-radius: 20px;
+  padding: 10px;
+}
+.search-box input[type="text"] {
+  padding: 6px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  width: 200px;
+  margin-right: 10px;
+}
+.search-bar {
+  display: flex;
+  align-items: center;
+  background-color: #f5f5f5;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  margin-bottom: 20px;
+}
+
+.search-item {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+  gap: 5px;
+}
+
+.search-item:last-child {
+  margin-right: 0;
+}
+
+.search-item.icon {
+  font-size: 18px;
+  color: #888;
+}
+
+.search-item input {
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  padding: 5px;
+  outline: none;
+  width: 200px;
+  font-size: 14px;
+}
+
+.search-item input:focus {
+  border-color: #007bff;
+}
+.destination-details p {
+  margin-bottom: 10px;
+  line-height: 1.5;
+  font-family: Arial, sans-serif;
+  font-size: 1em;
+  color: #333;
+}
+
+.bestemming {
+  font-weight: bold;
+  color: #0056b3;
+}
+
+.vertrekdatum {
+  font-style: italic;
+  color: #008080;
+}
+
+.vliegtuig {
+  color: #006699;
+}
+
+.dagenaantal {
+  font-weight: bold;
+  color: #cc0000;
+}
+.Main-logo{
+  position: absolute;
+  top: 10px;
+  width: 150px;
+  height: 150px;
+  float: left;
+}
+.login-alert {
+  flex-wrap: wrap;
+  margin-left: 30px;
+}
+.navbar {
+  background-image: linear-gradient(to right, rgba(0, 42, 255, 0.4) 0%, rgba(0, 128, 255, 0.77) 100%);
+  padding: 10px 0;
+  color: white;
+  flex-wrap: wrap;
+  display: flex;
+  margin-top: 50px;
+  margin-left: 150px;
+  padding-left: 100px;
+}
+.navbar a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: inline-block;
+  margin-left: 50px;
+}
+.rating {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.star {
+  font-size: 24px;
+  color: #ccc;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.star:hover,
+.star:focus {
+  color: #ffcc00;
+}
+
+#rating-value {
+  display: none;
+}
+.no-underline {
+  text-decoration: none;
+}
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    margin-top: 20px;
+    margin-left: 0;
+    padding-left: 0;
+  }
+  .navbar a {
+    margin-left: 0;
+    padding: 8px 12px;
+  }
+  .deals-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .deals-box {
+    width: 100%;
+    height: 200px;
+  }
+  .Main-logo {
+    display: none;
+  }
+}
+@media (max-width: 480px) {
+  .navbar {
+    padding: 5px;
+    margin-top: 10px;
+  }
+  .navbar a {
+    padding: 5px 8px;
+    font-size: 0.8em;
+  }
+  .deals-container {
+    gap: 10px;
+  }
+  .deals-box {
+    width: 100%;
+    height: 150px;
+  }
+  .Main-logo {
+    display: none;
+  }
+}
